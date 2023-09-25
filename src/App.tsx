@@ -4,7 +4,7 @@ import { Activity, Form } from "./components/Form";
 import { List } from "./components/List";
 import useLocalStorageState from "use-local-storage-state";
 
-type Weather = {
+export type Weather = {
   location: string;
   temperature: number;
   condition: string;
@@ -58,8 +58,8 @@ function App() {
       )}
       <List
         items={filteredActivities}
-        isGoodWeather={weather?.isGoodWeather}
         onDeleteActivity={handleDeleteActivity}
+        weather={weather}
       />
       <Form onAddActivity={handleAddActivity} />
     </>

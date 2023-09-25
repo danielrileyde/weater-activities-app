@@ -1,15 +1,18 @@
+import { Weather } from "../App";
 import { Activity } from "./Form";
 
 interface ListProps {
   items: Activity[];
-  isGoodWeather: boolean | undefined;
   onDeleteActivity: (id: string) => void;
+  weather: Weather | undefined;
 }
 
-export const List = ({ items, isGoodWeather, onDeleteActivity }: ListProps) => {
+export const List = ({ items, onDeleteActivity, weather }: ListProps) => {
   return (
     <>
-      <h2>{isGoodWeather ? "awsome weather" : "shite weather"}</h2>
+      {weather && (
+        <h2>{weather.isGoodWeather ? "awsome weather" : "shite weather"}</h2>
+      )}
       <ul>
         {items.map((item) => (
           <li key={item.id}>
