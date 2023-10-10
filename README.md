@@ -1,4 +1,4 @@
-# Weather Activities App '],
+# Weather Activities App
 
 ---
 
