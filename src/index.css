@@ -1,0 +1,96 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  background-color: #5cdb95;
+  font-family: IBM Plex Sans;
+  font-style: italic;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #edf5e1;
+}
+
+.weather__title {
+  color: #edf5e1;
+  font-size: 1.5rem;
+}
+
+.form {
+  background-color: #379683;
+  color: #edf5e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 50px 30px;
+  margin-top: 50px;
+}
+
+.submit__button {
+  background-color: #edf5e1;
+  border-radius: 5px;
+  box-shadow: 0px 5px #5cdb95;
+  border: none;
+  width: 50%;
+  padding: 10px 20px;
+  margin-top: 50px;
+  font-weight: 400;
+  font-style: italic;
+  color: #05386b;
+  cursor: pointer;
+}
+
+.submit__button:active {
+  transform: translateY(4px);
+}
+
+.list__section {
+  list-style: "";
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  background-color: #05386b;
+  color: #edf5e1;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-right: 40px;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 10px 20px 10px;
+}
+
+.list__button {
+  display: flex;
+  align-self: flex-end;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 50px;
+  font-weight: 400;
+  font-style: italic;
+  background-color: #edf5e1;
+  box-shadow: 0px 3px #5cdb95;
+}
+
+.list__button:hover {
+  cursor: pointer;
+}
+
+.input_input {
+  border-radius: 5px;
+  border: none;
+}
+
+.checkbox__checkbox {
+  border: none;
+}

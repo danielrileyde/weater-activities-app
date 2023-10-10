@@ -34,13 +34,22 @@ export const Form = ({ onAddActivity }: FormProps) => {
     event.target.elements.name.focus();
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Add New Activity</h3>
-      <label htmlFor="name">Name:</label>
-      <input type="text" id="name" name="name" />
-      <label htmlFor="checkbox">Is good weather activity:</label>
-      <input type="checkbox" id="checkbox" name="checkbox" />
-      <button>Submit</button>
+    <form className="form" onSubmit={handleSubmit}>
+      <h3 className="form__title">Add New Activity</h3>
+      <label className="input__label" htmlFor="name">
+        Name:
+      </label>
+      <input className="input_input" type="text" id="name" name="name" />
+      <label className="checkbox__label" htmlFor="checkbox">
+        Is good weather activity:
+      </label>
+      <input
+        className="checkbox__checkbox"
+        type="checkbox"
+        id="checkbox"
+        name="checkbox"
+      />
+      <button className="submit__button">Submit</button>
     </form>
   );
 };

@@ -1,0 +1,10 @@
+#root {
+  font-family: IBM Plex Sans;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+}

@@ -10,14 +10,26 @@ interface ListProps {
 export const List = ({ items, onDeleteActivity, weather }: ListProps) => {
   return (
     <>
-      {weather && (
-        <h2>{weather.isGoodWeather ? "awsome weather" : "shite weather"}</h2>
-      )}
-      <ul>
+      <div className="weather__title">
+        {" "}
+        {weather && (
+          <h2>
+            {weather.isGoodWeather
+              ? "Good Weather Activities"
+              : "Bad Weather Activities"}
+          </h2>
+        )}
+      </div>
+      <ul className="list__section">
         {items.map((item) => (
-          <li key={item.id}>
+          <li className="list__item" key={item.id}>
             {item.name}
-            <button onClick={() => onDeleteActivity(item.id)}>Delete</button>
+            <button
+              className="list__button"
+              onClick={() => onDeleteActivity(item.id)}
+            >
+              Delete
+            </button>
           </li>
         ))}
       </ul>

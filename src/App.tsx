@@ -53,7 +53,7 @@ function App() {
     <>
       {weather && (
         <h1>
-          {weather.condition} {weather.temperature}
+          {weather.condition} {weather.temperature} °C
         </h1>
       )}
       <List
